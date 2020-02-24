@@ -1,12 +1,12 @@
 License
 ------------
-This code is freely available under the terms of the license found in the [LICENCE](https://bitbucket.org/ioannismavromatis/sumocavs/src/master/LICENSE) file.\
+This code is freely available under the terms of the license found in the [LICENCE](https://github.com/v2x-dev/sumoCAVs/blob/master/LICENSE) file.\
 If this code is used for drafting a manuscript, all we ask is to cite the following papers:
 ```    
-@INPROCEEDINGS{8746698,
+@INPROCEEDINGS{sumoCAVs,
     author={I. {Mavromatis} and A. {Tassi} and R. J. {Piechocki} and M. {Sooriyabandara}},
     booktitle={Proc. of IEEE VTC2020-Spring},
-    title={On Urban Traffic Flow Benefits of Connected and Automated Vehicles},
+    title={{On Urban Traffic Flow Benefits of Connected and Automated Vehicles}},
     year={2020},
     volume={},
     number={},
@@ -23,6 +23,8 @@ Furthermore, the code requires what follows:
 * A working installation of SUMO 1.2.0 (or above) - http://sumo.sourceforge.net/userdoc/Downloads.html.
 
 * MATLAB R2019a (or above), including the Parallel Computing Toolbox.
+
+* TraCI4Matlab installed and configured for the OS and the MATLAB framework. - Installation instructions under [link](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwiP1-yIluvnAhWWQkEAHWr7Bd0QFjABegQIBBAB&url=https%3A%2F%2Fsourceforge.net%2Fp%2Fsumo%2Fmailman%2Fattachment%2FCALCFZmb%252B_o2o3wNjwBJuq9Wbr95XAEpaL1vdnC_DtLgWvuWh0w%2540mail.gmail.com%2F1%2F&usg=AOvVaw14zNdsP6CZudag1vcYZXek)
 
 To Replicate the results and the figures reported in the manuscripts:
 -------------------------------------------------------------

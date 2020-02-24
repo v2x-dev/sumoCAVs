@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="./oldScenarioRegular/map.net.xml"/>
+        <route-files value="./oldScenarioRegular/map.rou.xml"/>
+        <additional-files value="./oldScenarioRegular/map.poly.xml"/>
+    </input>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <time-to-teleport value="10001"/>
+        <max-depart-delay value="0.1"/>
+        <ignore-junction-blocker value="10001"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="180"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+ 
+</configuration>

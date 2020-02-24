@@ -1,0 +1,16 @@
+%%% old command
+netconvert --osm-files map.osm.xml --output-file map.net.xml --no-turnarounds --opposites.guess --opposites.guess.fix-lengths --geometry.remove --roundabouts.guess --ramps.guess --keep-edges.by-vclass passenger,taxi,authority,private,emergency,truck --junctions.join --tls.guess-signals --tls.discard-simple --tls.join --tls.default-type actuated
+
+%%% new command
+netconvert --osm-files map.osm.xml --output-file map.net.xml --no-turnarounds --opposites.guess --opposites.guess.fix-lengths --roundabouts.guess --ramps.guess --keep-edges.by-vclass passenger,taxi,authority,private,emergency,truck --tls.guess-signals --tls.discard-simple --tls.join --tls.default-type actuated
+
+polyconvert --osm-files map.osm.xml --net-file map.net.xml -o map.poly.xml
+
+%%% old old command
+~/Documents/git/sumo-1.1.0/tools/randomTrips.py --net-file=map.net.xml --additional-files=additional.xml --output-trip-file=map.trips.xml --route-file=map.rou.xml --begin=0 --end=10000 --verbose --period 0.2 --trip-attributes="type=\"typedist1\" departLane=\"best\" departSpeed=\"max\" departPos=\"random\""
+
+%%% old command
+~/Documents/git/sumo-1.1.0/tools/randomTrips.py --net-file=map.net.xml --additional-files=additional.xml --output-trip-file=map.trips.xml --route-file=map.rou.xml --begin=0 --end=10000 --verbose --period 0.1 --intermediate 5 --trip-attributes="type=\"typedist1\" departLane=\"best\" departSpeed=\"max\" departPos=\"random\"" --seed 1000
+
+%%% new command
+~/Documents/git/sumo-1.1.0/tools/randomTrips.py --net-file=map.net.xml --additional-files=additional.xml --output-trip-file=map.trips.xml --route-file=map.rou.xml --begin=0 --end=10000 --verbose --period 0.1 --min-distance 1500 --fringe-factor 10 --trip-attributes="type=\"typedist1\" departLane=\"best\" departSpeed=\"max\" departPos=\"random\" arrivalPos=\"random\"" --seed 1000

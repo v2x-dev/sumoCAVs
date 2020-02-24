@@ -1,0 +1,14 @@
+tau; normal(0.1,0.1)
+id; CAV
+length; normal(4.5,0.2); [3.8,5.1]
+carFollowModel; IDM
+speedFactor; 1.3
+speedDev; 0
+accel; 1.25
+decel; 2.09
+delta; 4
+jmIgnoreKeepClearTime; 300
+collision.mingap-factor; 0
+color; green
+minGap; 1.5
+jmIgnoreKeepClearTime; -1

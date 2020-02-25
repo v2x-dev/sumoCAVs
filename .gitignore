@@ -1,0 +1,15 @@
+*.*~
+.DS_Store
+*.mat
+
+map.trips.xml
+map.net.xml
+map.rou.xml
+map.poly.xml
+map.rou.alt.xml
+allVehiclesDistribution.xml
+avDistribution.xml
+cavDistribution.xml
+normalDistribution.xml
+tlsOffsets.add.xml
+tlsCycle.add.xml
